@@ -24,6 +24,8 @@ blocks:
             - echo "$ABC"
     dependencies:
       - Run Code Analysis
+    run:
+      when: 'result != ''passed'' '
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
