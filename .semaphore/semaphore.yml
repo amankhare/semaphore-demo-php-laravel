@@ -16,6 +16,8 @@ blocks:
           commands:
             - export ABC="984"
     dependencies: []
+    run:
+      when: result = 'passed'
   - name: Run Unit tests
     task:
       jobs:
