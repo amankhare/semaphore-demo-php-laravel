@@ -16,13 +16,6 @@ blocks:
           commands:
             - export ABC="984"
     dependencies: []
-  - name: Run Unit tests
-    task:
-      jobs:
-        - name: phpunit
-          commands:
-            - echo "$ABC"
-    dependencies:
-      - Run Code Analysis
-    run:
-      when: branch = 'master'
+promotions:
+  - name: Promotion 1
+    pipeline_file: pipeline_2.yml
