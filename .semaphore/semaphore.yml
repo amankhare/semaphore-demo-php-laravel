@@ -25,4 +25,4 @@ blocks:
     dependencies:
       - Run Code Analysis
     run:
-      when: 'result != ''failed'' '
+      when: result != failed
