@@ -12,4 +12,4 @@ blocks:
           commands:
             - echo "job 1"
     skip:
-      when: result ! = 'passed'
+      when: result != 'passed'
