@@ -25,7 +25,7 @@ blocks:
     dependencies:
       - Run Code Analysis
     run:
-      when: 'result != ''passed'' '
+      when: result = 'failed'
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
