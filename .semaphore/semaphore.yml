@@ -14,7 +14,7 @@ blocks:
       jobs:
         - name: phpmd
           commands:
-            - export ABC="984"
+            - echo "$SEMAPHORE_TRIGGERED_BY"
     dependencies: []
 promotions:
   - name: Promotion 1
