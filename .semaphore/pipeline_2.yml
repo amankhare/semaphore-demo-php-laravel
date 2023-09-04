@@ -11,5 +11,3 @@ blocks:
         - name: 'Job #1'
           commands:
             - echo "$SEMAPHORE_PIPELINE_PROMOTED_BY"
-    run:
-      when: result = 'failed'
