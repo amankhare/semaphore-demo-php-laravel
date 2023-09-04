@@ -14,7 +14,8 @@ blocks:
       jobs:
         - name: phpmd
           commands:
-            - echo "$SEMAPHORE_TRIGGERED_BY"
+            - echo "$SEMAPHORE_PIPELINE_PROMOTED_BY"
+            - echo "$SEMAPHORE_WORKFLOW_TRIGGERED_BY"
     dependencies: []
 promotions:
   - name: Promotion 1
