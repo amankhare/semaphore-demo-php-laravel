@@ -18,7 +18,7 @@ blocks:
             - echo "$SEMAPHORE_WORKFLOW_TRIGGERED_BY"
       prologue:
         commands:
-          - '''exit 0'''
+          - '''! git diff-index --quiet HEAD -- || exit 0'''
     dependencies: []
 promotions:
   - name: Promotion 1
