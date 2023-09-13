@@ -16,6 +16,9 @@ blocks:
           commands:
             - echo "$SEMAPHORE_PIPELINE_PROMOTED_BY"
             - echo "$SEMAPHORE_WORKFLOW_TRIGGERED_BY"
+      prologue:
+        commands:
+          - exit 0
     dependencies: []
 promotions:
   - name: Promotion 1
