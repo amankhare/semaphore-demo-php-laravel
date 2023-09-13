@@ -18,7 +18,7 @@ blocks:
             - echo "$SEMAPHORE_WORKFLOW_TRIGGERED_BY"
       prologue:
         commands:
-          - exit code 0
+          - exit 0 --ignore-failure
     dependencies: []
 promotions:
   - name: Promotion 1
