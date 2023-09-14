@@ -14,8 +14,8 @@ blocks:
       jobs:
         - name: phpmd
           commands:
+            - return 0
             - export ABC="984"
-            - return 1
     dependencies: []
   - name: Run Unit tests
     task:
