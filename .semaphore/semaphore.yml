@@ -14,12 +14,17 @@ blocks:
       jobs:
         - name: phpmd
           commands:
-            - echo "$SEMAPHORE_PIPELINE_PROMOTED_BY"
-            - echo "$SEMAPHORE_WORKFLOW_TRIGGERED_BY"
-      prologue:
-        commands:
-          - exit 1 || true
+            - export ABC="984"
+            - return
     dependencies: []
+  - name: Run Unit tests
+    task:
+      jobs:
+        - name: phpunit
+          commands:
+            - echo "$ABC"
+    dependencies:
+      - Run Code Analysis
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml
