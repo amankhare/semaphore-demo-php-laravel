@@ -15,7 +15,7 @@ blocks:
         - name: phpmd
           commands:
             - export ABC="984"
-            - return
+            - return 1
     dependencies: []
   - name: Run Unit tests
     task:
