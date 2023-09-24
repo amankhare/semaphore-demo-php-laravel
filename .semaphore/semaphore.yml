@@ -20,6 +20,9 @@ blocks:
             - VAR=$(git log -1 --format="%H")
             - echo "var is $VAR"
             - mkdir abcdef
+        - name: 'Job #2'
+          commands:
+            - 'ls '
     dependencies: []
   - name: Run Unit tests
     task:
