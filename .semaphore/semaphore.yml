@@ -19,6 +19,7 @@ blocks:
             - checkout
             - VAR=$(git log -1 --format="%H")
             - echo "var is $VAR"
+            - mkdir abcdef
     dependencies: []
   - name: Run Unit tests
     task:
@@ -26,6 +27,7 @@ blocks:
         - name: phpunit
           commands:
             - echo "$ABC"
+            - ls
     dependencies:
       - Run Code Analysis
 promotions:
